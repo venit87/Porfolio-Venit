@@ -68,24 +68,16 @@
         <div onclick="closework()"><i class="fas fa-angle-right"></i></div>
         <h1>works.</h1>
         <section>
-            <h2>works</h2>
-            <p>
-                In Progress...
-            </p>
-            <div id="used">
-                <div><i class="fas fa-circle"></i>&nbsp;HTML5</div>
-                <div><i class="fas fa-circle"></i>&nbsp;CSS3</div>
-                <div><i class="fas fa-circle"></i>&nbsp;Javascript</div>
-            </div>
-            <button class="btn_one">button 1</button>
-            <button class="btn_two">button 2</button>
+           <h2>
+                no works yet, but i'm open to opportunities and eager to learn and grow in the field of web development.
+           </h2>
         </section>
     </div>
     <div id="about_container" class="container">
         <div onclick="closeabout()"><i class="fas fa-angle-left"></i></div>
-        <h1>about.</h1>
+        <h1>About me</h1>
         <section>
-            <h2>about me</h2>
+    
             <p>
                 Desenvolvedor Júnior em início de carreira, com foco no desenvolvimento de aplicações web utilizando
                 JavaScript, HTML e CSS, buscando sempre boas práticas, código limpo e aprendizado contínuo.
@@ -107,7 +99,7 @@
             </p>
         </section>
         <section>
-            <h2>skills</h2>
+            <h2>Skills</h2>
             <p>
                 • JavaScript (ES6+)
                 • HTML5 & CSS3
@@ -124,11 +116,12 @@
         <section>
             <h2>contact me</h2>
             <p>
-            <form>
-                <input type="text" placeholder="name" required>
-                <input type="email" placeholder="email" required><br>
-                <textarea placeholder="your message" required rows="5"></textarea><br>
-                <button class="btn_one">send</button>
+            <form id="contactForm" method="POST" action="https://formspree.io/f/mzdkrlay">
+                <input type="text" name="name" placeholder="name" required>
+                <input type="email" name="email" placeholder="email" required><br>
+                <textarea name="message" placeholder="your message" required rows="5"></textarea><br>
+                <button type="submit" class="btn_one">send</button>
+                <div id="formStatus" style="margin-top: 10px;"></div>
             </form>
             </p>
         </section>
@@ -136,9 +129,9 @@
     <div id="footer">
         made on earth by a human <br> <a href="https://github.com/venit87" target="_blank">venit87</a>
     </div>
-    <script src="index.js" type="text/javascript"></script>
     <script src="particles.js"></script>
     <script src="app.js"></script>
+    <script src="index.js" type="text/javascript"></script>
 </body>
 
 </html>
