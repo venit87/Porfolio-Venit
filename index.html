@@ -115,15 +115,19 @@
         <h1>Contato</h1>
         <section>
             <h2>Fale comigo</h2>
-            <p>
             <form id="contactForm" method="POST" action="https://formspree.io/f/mzdkrlay">
-                <input type="text" name="name" placeholder="name" required>
-                <input type="email" name="email" placeholder="email" required><br>
-                <textarea name="message" placeholder="your message" required rows="5"></textarea><br>
-                <button type="submit" class="btn_one">send</button>
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="name" required>
+                    <input type="email" name="email" placeholder="email" required>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" placeholder="your message" required rows="5"></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn_one">send</button>
+                </div>
                 <div id="formStatus" style="margin-top: 10px;"></div>
             </form>
-            </p>
         </section>
     </div>
     <script src="particles.js"></script>

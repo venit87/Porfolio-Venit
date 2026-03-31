@@ -286,14 +286,28 @@ body {
 }
 
 /* Formulário */
+.container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.form-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+}
+
 .container form input,
 .container form textarea {
-    width: 46%;
     background: transparent;
     border: none;
     border-bottom: 3px solid rgba(241, 239, 239, 0.5);
     padding: 8px 10px;
-    margin: 20px 1%;
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
     color: var(--text-white);
@@ -301,9 +315,19 @@ body {
     transition: border-bottom-color var(--animation-duration) ease-in-out;
 }
 
+.container form input {
+    width: 45%;
+    min-width: 200px;
+}
+
 .container form textarea {
-    width: 96%;
+    width: 95%;
+    min-width: 250px;
     resize: none;
+}
+
+.container form button {
+    margin-top: 10px;
 }
 
 .container form input:focus,
@@ -415,7 +439,7 @@ body {
 
     .container form input,
     .container form textarea {
-        width: 90%;
+        width: 90% !important;
     }
 }
     #menu {
